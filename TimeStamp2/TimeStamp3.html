@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+<script type="text/javascript">
+  let getPresentTime = new Date(); // Getting present full time (YMD hms...)
+  let getYear = getPresentTime.getFullYear() // Getting year from present time. (from getPresentTime)
+  let getMonth = getPresentTime.getMonth() + 1
+  let getDate = getPresentTime.getDate()
+  let getHours = getPresentTime.getHours()
+  let getMins = getPresentTime.getMinutes()
+</script>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+  <body>
+    <div class="buttons">
+      <button Type="button" id="stampBtn">타임스탬프</button>
+    </div>
+    <p id="stampRecord"></p>
+    <script type="text/javascript">
+      getStampBtn = document.getElementById('stampBtn')
+
+      function timeStamp() {
+        getYM = getYear + "</br>" + getMonth + "</br>"
+        stampRecord.innerHTML += getYM // Scanning IDs called "stampRecord" and insert "getYear" th repeatedly adding(+=)...
+      }
+      getStampBtn.addEventListener('click', timeStamp)
+    </script>
+
+
+  </body>
+
+</html>
+ㅇㅇDDSSS
