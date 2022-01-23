@@ -15,6 +15,7 @@
   <body>
     <div class="buttons">
       <button Type="button" id="stampBtn">타임스탬프</button>
+      <button Type="button" id="resetBtn">RESET</button>
     </div>
     <p id="stampRecord"></p>
     <script type="text/javascript">
@@ -26,7 +27,14 @@
       }
       getStampBtn.addEventListener('click', timeStamp)
     </script>
+    <script type="text/javascript">
+      getResetBtn = document.getElementById('resetBtn')
 
+      function reset() {
+        stampRecord.innerHTML = ""
+      }
+      getResetBtn.addEventListener('click', reset)
+    </script>
 
   </body>
 
